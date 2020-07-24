@@ -1,0 +1,10 @@
+<div class="card-columns" >
+  <div class="card"  *ngFor="let post of posts">
+    <div class="card-body" style="padding: 10px; min-height: 250px; border-radius: 10px; ">
+      <h4 class="card-title" style="padding: 10px;">{{post.title}}</h4>
+      <p class="card-text" style="padding: 10px;">{{post.body}}</p>
+      <button  (click)="onOpen(post.id)" class="btn btn-primary">Open</button>
+    </div>
+  </div>
+  <br>
+</div>

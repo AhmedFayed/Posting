@@ -1,0 +1,26 @@
+
+.btn-group{
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+textarea.required {
+  box-shadow: none;
+  min-height: 200px;
+}
+
+textarea {
+  min-height: 200px;
+}
+
+textarea.required:focus {
+    background-color: lightyellow;
+}
+
+*{
+  padding: 5px;
+}
+
+*{
+  margin: 5px;
+}

@@ -1,0 +1,13 @@
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+  <div class="card">
+    <div class="card-body" style="padding: 10px; min-height: 250px; ">
+      <input type="text" class="form-control" name="title" [(ngModel)]="post.title" placeholder="Title" required />
+      <textarea class="form-control" name="body" [(ngModel)]="post.body" placeholder="Body" required ></textarea>
+    </div>
+    <div class="btn-group">
+      <button type="submit" class="btn btn-success">Save</button>
+      <button type="button" class="btn btn-danger" (click)="onDelete()">Delete</button>
+      <button type="button" class="btn btn-primary" (click)="onBack()">Back</button>
+    </div>
+  </div>
+</form>
